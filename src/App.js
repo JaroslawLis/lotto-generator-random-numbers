@@ -1,8 +1,14 @@
-import React, { Component } from "react";
+import React, {
+  Component
+} from "react";
 import "./App.css";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import Tickets from "./components/Tickets";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 const settings = {
   price: 1.25,
   total: 10
@@ -39,18 +45,38 @@ class App extends Component {
     }
     return result;
   };
+  componentDidMount() {
+    AOS.init({
+      duration: 2000
+    })
+  }
+  componentDidUpdate() {
+    AOS.init({
+      duration: 2000
+    })
+  }
 
   render() {
-    return (
-      <>
-        <Header budget={settings.total} />
-        <NavBar
-          click={this.handleDrawingButton}
-          lotteryTicketPrice={settings.price}
-        />
+    return ( <
+      >
+      <
+      Header budget = {
+        settings.total
+      }
+      /> <
+      NavBar click = {
+        this.handleDrawingButton
+      }
+      lotteryTicketPrice = {
+        settings.price
+      }
+      />
 
-        <Tickets coupons={this.state.tableOfResult} />
-      </>
+      <
+      Tickets coupons = {
+        this.state.tableOfResult
+      }
+      /> < / >
     );
   }
 }
