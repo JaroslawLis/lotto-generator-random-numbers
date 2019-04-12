@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cba18953a67c9ca7fb0e",
-    "url": "/lotto-generator-random-numbers/static/css/main.e0de3fc6.chunk.css"
+    "revision": "8c91ee00c36b73bb1911",
+    "url": "/lotto-generator-random-numbers/static/css/main.64de3447.chunk.css"
   },
   {
-    "revision": "cba18953a67c9ca7fb0e",
-    "url": "/lotto-generator-random-numbers/static/js/main.fe770574.chunk.js"
+    "revision": "8c91ee00c36b73bb1911",
+    "url": "/lotto-generator-random-numbers/static/js/main.36d40272.chunk.js"
   },
   {
     "revision": "76aa8cb42d51e2ccf7dc",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/lotto-generator-random-numbers/static/js/2.164617b5.chunk.js"
   },
   {
-    "revision": "3f6fd2977f05d48f836a6815a4390450",
+    "revision": "b629e7b2c25bf5b04078b09da41bb463",
     "url": "/lotto-generator-random-numbers/index.html"
   }
 ];
