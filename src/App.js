@@ -43,8 +43,11 @@ class App extends Component {
   render() {
     return (
       <>
-        <Header budget={settings.total} lotteryTicket={settings.price} />
-        <NavBar click={this.handleDrawingButton} />
+        <Header budget={settings.total} />
+        <NavBar
+          click={this.handleDrawingButton}
+          lotteryTicketPrice={settings.price}
+        />
 
         <Tickets coupons={this.state.tableOfResult} />
       </>
