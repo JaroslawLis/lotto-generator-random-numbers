@@ -1,0 +1,9 @@
+.navigation {
+    background-color: #acd;
+}
+
+nav button {
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: block;
+}

@@ -1,9 +1,15 @@
+div#root {
+  width: 90%;
+  margin: 0 auto;
+}
+
 div.main_table {
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.pojedynczy_zaklad {
+.one_ticket {
   border: 1px solid red;
   display: flex;
   margin-bottom: 10px;
@@ -11,13 +17,16 @@ div.main_table {
   flex-wrap: wrap;
 }
 
-.pojedynczy_zaklad div {
+.one_ticket div {
   border: 2px solid blue;
-  flex-basis: 15%;
+  /* flex-basis: 15%; */
   text-align: center;
   width: 30px;
   height: 30px;
   line-height: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
 }
 
 .full_number {
