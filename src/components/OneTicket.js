@@ -17,7 +17,13 @@ const OneTicket = ({ coupon }) => {
       arr.push(div);
     }
 
-    return <div className="one_ticket"> {arr} </div>;
+    return (
+      <div className="one_ticket">
+        {arr}
+        <span>Wylosowane liczby</span>
+        <span>{numbers.sort((a, b) => a - b).join(", ")}</span>
+      </div>
+    );
   } else {
     return null;
   }

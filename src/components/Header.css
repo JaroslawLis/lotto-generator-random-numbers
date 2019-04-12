@@ -2,5 +2,9 @@ header {
 
     margin: 0 auto;
     text-align: center;
-    background-color: #aaa;
+    background-color: #bd245f;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 0;
+    margin: 5px 0;
 }

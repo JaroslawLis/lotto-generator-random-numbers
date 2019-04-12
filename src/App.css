@@ -2,11 +2,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #ddd;
+
 }
 
 div#root {
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+  font-family: arial;
+
 }
 
 div.main_table {
@@ -17,33 +22,57 @@ div.main_table {
 }
 
 .one_ticket {
+
   position: relative;
-  border: 1px dotted red;
+  width: 28%;
   display: flex;
-  margin-bottom: 10px;
-  width: 40vw;
-  height: 80vw;
+  margin-bottom: 2%;
+
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin: 0 auto;
 
+  background-color: #f3dcad;
+  border-radius: 20px;
+  padding: 10px;
 }
 
+
+
 .one_ticket div {
-  border: 2px solid blue;
-  width: 12%;
-  height: 6%;
+  border: 2px solid #bd245f;
+  width: 10%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-
-  margin: 0 1% 0 1%;
+  margin: 4%;
+  /* font-weight: 700; */
+  font-size: 1.12em;
 
 }
 
+.one_ticket div:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
 .full_number {
+  font-weight: bold;
   background-color: #fbb034;
   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+
+@media screen and (max-width: 995px) {
+  .one_ticket {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .one_ticket {
+    width: 90%;
+  }
 }
