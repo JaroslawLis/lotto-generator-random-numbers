@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/lotto-generator-random-numbers/precache-manifest.624c75f19b5dece61c2218efba869dd5.js"
+  "/lotto-generator-random-numbers/precache-manifest.705112d9d5fe5cf5d8e230fb7d81b088.js"
 );
 
 workbox.clientsClaim();
