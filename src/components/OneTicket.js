@@ -1,5 +1,5 @@
 import React from "react";
-const OneTicket = ({ coupon }) => {
+const OneTicket = ({ coupon, animation, numberOfTicket }) => {
   const numbers = [...coupon];
 
   if (numbers.length) {
@@ -18,10 +18,12 @@ const OneTicket = ({ coupon }) => {
     }
 
     return (
-      <div className="one_ticket">
+      <div className="one_ticket" data-aos={animation}>
+        <br />
         {arr}
         <span>Wylosowane liczby</span>
         <span>{numbers.sort((a, b) => a - b).join(", ")}</span>
+        <h3>Kupon nr {numberOfTicket}</h3>
       </div>
     );
   } else {

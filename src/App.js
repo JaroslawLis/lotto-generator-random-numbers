@@ -50,11 +50,7 @@ class App extends Component {
       duration: 2000
     })
   }
-  componentDidUpdate() {
-    AOS.init({
-      duration: 2000
-    })
-  }
+
 
   render() {
     return ( <
